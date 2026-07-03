@@ -88,3 +88,39 @@ document.getElementById("ping").innerHTML =
 Math.floor(Math.random() * 20 + 15) + "ms";
 
 }, 1200);
+
+function sendMessage(){
+
+const input=document.getElementById("message");
+
+const chat=document.getElementById("chat");
+
+if(input.value=="") return;
+
+chat.innerHTML+=`
+<div class="user">
+${input.value}
+</div>
+`;
+
+let msg=input.value;
+
+input.value="";
+
+setTimeout(()=>{
+
+chat.innerHTML+=`
+<div class="ai">
+
+Sorry 😅
+
+I'm still under development.
+
+</div>
+`;
+
+chat.scrollTop=chat.scrollHeight;
+
+},700);
+
+}
