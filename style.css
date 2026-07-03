@@ -133,37 +133,6 @@ gap:20px;
 }
 
 .card{
-<h1>Xqin OWNER</h1>
-<div class="box">
-
-<div class="box-title">
-AI STATUS
-</div>
-
-<div class="stats-text">
-
-<div class="stat-row">
-<span>Status</span>
-<span style="color:lime;">🟢 ONLINE</span>
-</div>
-
-<div class="stat-row">
-<span>CPU</span>
-<span id="cpu">43%</span>
-</div>
-
-<div class="stat-row">
-<span>RAM</span>
-<span id="ram">28%</span>
-</div>
-
-<div class="stat-row">
-<span>Ping</span>
-<span id="ping">18ms</span>
-</div>
-
-</div>
-
 background:rgba(255,255,255,.05);
 
 border:1px solid #66ccff;
