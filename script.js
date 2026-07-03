@@ -75,3 +75,16 @@ document.getElementById("groups").innerHTML=g.toLocaleString();
 }
 
 },20);
+
+setInterval(() => {
+
+document.getElementById("cpu").innerHTML =
+Math.floor(Math.random() * 35 + 35) + "%";
+
+document.getElementById("ram").innerHTML =
+Math.floor(Math.random() * 40 + 20) + "%";
+
+document.getElementById("ping").innerHTML =
+Math.floor(Math.random() * 20 + 15) + "ms";
+
+}, 1200);
