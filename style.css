@@ -432,3 +432,22 @@ cursor:pointer;
 font-weight:bold;
 
 }
+
+.menu-btn{
+    position:fixed;
+    top:15px;
+    left:15px;
+    width:45px;
+    height:45px;
+    border-radius:10px;
+    border:1px solid #66ccff;
+    background:#031321;
+    color:#66ccff;
+    font-size:24px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    z-index:1000;
+    box-shadow:0 0 20px rgba(102,204,255,.4);
+}
