@@ -287,16 +287,21 @@ box-shadow:0 0 35px #66ccff;
 
 .sidebar{
     position:fixed;
-    left:0;
+    left:-230px;
     top:0;
-    width:110px;
+    width:220px;
     height:100%;
-    background:rgba(0,0,0,.35);
+    background:rgba(0,0,0,.85);
     backdrop-filter:blur(20px);
     border-right:1px solid rgba(102,204,255,.3);
-    padding:30px 20px;
+    padding:25px;
     box-sizing:border-box;
-    z-index:10;
+    transition:.4s;
+    z-index:999;
+}
+
+.sidebar.active{
+    left:0;
 }
 
 .sidebar h2{
