@@ -1,71 +1,184 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maintenance</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
+<title>AXION AI</title>
 
-body{
-    background:#0d1117;
-    color:white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
-}
+<link rel="stylesheet" href="style.css">
 
-.box{
-    max-width:500px;
-}
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
-h1{
-    font-size:40px;
-    color:#58a6ff;
-}
-
-p{
-    margin-top:15px;
-    color:#c9d1d9;
-    line-height:1.6;
-}
-
-.loader{
-    width:60px;
-    height:60px;
-    border:6px solid #30363d;
-    border-top:6px solid #58a6ff;
-    border-radius:50%;
-    margin:30px auto;
-    animation:spin 1s linear infinite;
-}
-
-@keyframes spin{
-    to{transform:rotate(360deg);}
-}
-</style>
+<script src="script.js" defer></script>
 
 </head>
+
 <body>
 
-<div class="box">
-    <h1>🚧 Website Sedang Maintenance</h1>
+<div id="loader">
 
-    <div class="loader"></div>
+<h1>AXION AI</h1>
 
-    <p>
-        Maaf, website sedang dalam proses pembaruan.<br>
-        Silakan kembali beberapa saat lagi.
-    </p>
+<p id="loading-text">Initializing...</p>
+
+<div class="progress">
+
+<div class="bar"></div>
+
 </div>
 
+</div>
+
+<div id="dashboard">
+
+<nav>
+
+<h2>AXION AI</h2>
+
+<ul>
+
+<li>🏠 Dashboard</li>
+
+<li>🤖 AI</li>
+
+<li>💻 Terminal</li>
+
+<li>📊 Analytics</li>
+
+<li>⚙ Settings</li>
+
+</ul>
+
+</nav>
+
+<main>
+
+<div class="card">
+<h1>Xqin OWNER</h1>
+<div class="box">
+
+<div class="box-title">
+AI STATUS
+</div>
+
+<div class="stats-text">
+
+<div class="stat-row">
+<span>Status</span>
+<span style="color:lime;">🟢 ONLINE</span>
+</div>
+
+<div class="stat-row">
+<span>CPU</span>
+<span id="cpu">43%</span>
+</div>
+
+<div class="stat-row">
+<span>RAM</span>
+<span id="ram">28%</span>
+</div>
+
+<div class="stat-row">
+<span>Ping</span>
+<span id="ping">18ms</span>
+</div>
+
+</div>
+<h3>System Status</h3>
+
+<p>🟢 ONLINE</p>
+
+</div>
+
+<div class="card">
+
+<h3>CPU</h3>
+
+<p>32%</p>
+
+</div>
+
+<div class="card">
+
+<h3>RAM</h3>
+
+<p>58%</p>
+
+</div>
+
+<div class="card">
+
+<h3>Ping</h3>
+
+<p>18ms</p>
+
+</div>
+<div class="card">
+
+<h3>Time</h3>
+
+<p id="clock">00:00:00</p>
+
+</div>
+<div class="card">
+
+<h3>Total Users</h3>
+
+<p id="users">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Groups</h3>
+
+<p id="groups">0</p>
+
+</div>
+<div class="terminal">
+
+<p>> Booting Axion...</p>
+
+<p>> Connecting Server...</p>
+
+<p>> AI Ready ✓</p>
+
+</div>
+
+</main>
+<div class="chat-box">
+
+    <div class="chat-header">
+        🤖 AXION AI
+    </div>
+
+    <div class="chat-body" id="chat">
+
+        <div class="ai">
+            Hello, I'm Axion AI 👋
+        </div>
+
+    </div>
+
+    <div class="chat-input">
+
+        <input
+        type="text"
+        id="message"
+        placeholder="Ask anything...">
+
+        <button onclick="sendMessage()">
+            Send
+        </button>
+
+    </div>
+
+</div>
+</div>
+<div class="aurora"></div>
 </body>
+<div class="menu-btn" onclick="toggleMenu()">
+☰
+</div>
 </html>
